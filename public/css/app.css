@@ -267,7 +267,34 @@ nav a:hover {
     text-align: center;
     color: #171212a8;
 }
-
+/* ? section statistics */
+.statistics{
+    background: url("../images/stats-bg.jpg") no-repeat center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5); 
+    background-blend-mode: overlay;
+    height: 70vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4vh 0;
+}
+.statistics .stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+.stats span{
+    font-size: 40px;
+    font-weight: 700;
+}
+.stats p {
+    color: #dadadae6;
+}
 
 
 
