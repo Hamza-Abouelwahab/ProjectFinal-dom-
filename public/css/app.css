@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f2f2f2;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5vh 6vw;
+}
+h2 span{
+    color: #d53535;
+}
+nav{
+    display: flex;
+    gap: 3vw;
+}
+nav > a{
+    color: gray;
+    text-decoration: none;
+}
+nav a:hover {
+    border-bottom:#d53535 2px solid;
+}
+.btn-booka{
+    padding: 1.9vh 1.7vw;
+    border: none;
+    border-radius: 20px;
+    background-color: #d53535;
+    color: white;
+    cursor: pointer;
+}
+.btn-booka:hover{
+    background-color: hsl(0, 66%, 55%);
+}
+#list{
+    display: none;
+}
+/* ? hero section */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 6vw;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.title h1 {
+    width: 70%;
+    line-height: 8vh;
+}
+.title p{
+    width: 75%;
+    line-height: 6vh;
+    font-size: 20px;
+    color: rgba(23, 18, 18, 0.659);
+}
+.btns{
+    padding-top: 6vh;
+    display: flex;
+    gap: 2vw;
+}
+.btn-video{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn-video > p{
+    font-size: 15px;
+    font-weight: 550;
+    color: black;
+}
+.btn-video > i{
+    font-size: 30px;
+    color: #d53535;
+}
+.btn-video > p:hover{
+    color: #d53535;
+}
+.image > img{
+    width: 80%;
+    transform: translateX(25%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
