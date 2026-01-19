@@ -60,7 +60,7 @@ nav a:hover {
     width: 75%;
     line-height: 6vh;
     font-size: 20px;
-    color: rgba(23, 18, 18, 0.659);
+    color: #171212a8;
 }
 .btns{
     padding-top: 6vh;
@@ -87,9 +87,98 @@ nav a:hover {
 .btn-video > p:hover{
     color: #d53535;
 }
+.contianerCarousel{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+.contianerCarousel > .close{
+    font-size: 30px;
+    position: absolute;
+    right: 0px;
+    padding: 2vh 2vw;
+
+}
+
+/* right side */
 .image > img{
     width: 80%;
     transform: translateX(25%);
+}
+/* ? section about */
+.about{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 6vh;
+    padding: 5vh 6vw;
+}
+.about h1 span{
+    color: #d53535;
+}
+.about .d-flex{
+    display: flex;
+    
+}
+.d-flex .left-side{
+    width: 60%;
+}
+.d-flex .left-side img{
+    width: 100%;
+}
+.d-flex .left-side .contact-num{
+    border: solid 3px gray ;
+    padding: 5vh 2vw;
+    text-align: center;
+}
+.contact-num h3{
+    font-weight: 600;
+}
+.contact-num span{
+    font-size:25px ;
+    font-weight: 600;
+    margin-top: 2vh;
+    color: #d53535;
+    
+}
+.d-flex .right-side{
+    width: 40%;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}.d-flex .right-side span{
+    color: #171212a8;
+}
+.d-flex .right-side .text-iconChecked{
+    display: flex;
+    gap: 1vw;
+
+}
+.text-iconChecked i {
+    color: #d53535;
+}
+.click-image{
+    position: relative;
+}
+.d-flex .right-side .click-image img{
+    width: 100%;
+}
+.click-image i{
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #d53535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 
 
