@@ -2,8 +2,22 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: "amatic" ;
+    src: url("../fonts/Amatic_SC/AmaticSC-Bold.ttf");
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
-    background-color: #f2f2f2;
+    font-family: "Roboto";
+}
+h1,h2,h3,h4{
+    font-family: "amatic" ,sans-serif;
+
 }
 header{
     display: flex;
@@ -12,7 +26,10 @@ header{
     background-color: white;
     padding: 5vh 6vw;
 }
-h2 span{
+header h2 {
+    font-family: none;
+}
+header h2 span{
     color: #d53535;
 }
 nav{
@@ -42,6 +59,7 @@ nav a:hover {
 }
 /* ? hero section */
 .hero-section{
+    background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
     padding: 5vh 6vw;
@@ -54,10 +72,10 @@ nav a:hover {
 }
 .title h1 {
     width: 70%;
-    line-height: 8vh;
+    font-size: 50px;
 }
 .title p{
-    width: 75%;
+    width: 80%;
     line-height: 6vh;
     font-size: 20px;
     color: #171212a8;
@@ -133,7 +151,7 @@ nav a:hover {
     padding: 5vh 2vw;
     text-align: center;
 }
-.contact-num h3{
+.contact-num p{
     font-weight: 600;
 }
 .contact-num span{
@@ -180,11 +198,75 @@ nav a:hover {
     height: 50px;
     width: 50px;
 }
-
-
-
-
-
+/* ? secound section about */
+.secound-sc-about{
+    background-color: #f2f2f2;
+    display: flex;
+    gap: 4vw;
+    padding: 5vw 6vh;
+}
+.secound-sc-about .first-div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    background-color: #ce1212;
+    color: #ffffff;
+    padding: 4vh 4vw;
+    
+    
+}
+.secound-sc-about .first-div span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.secound-sc-about .first-div .btn {
+    text-align: center;
+}
+.first-div .btn button{
+    padding: 2.5vh 3.5vw;
+    border: none;
+    border-radius: 20px;
+    background-color: #d53535;
+    color: white;
+    cursor: pointer;
+}
+.secound-sc-about .statW{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vh;
+    padding: 4vh 4vw;
+    background-color: white;
+}
+.statW i {
+    font-size: 30px;
+    color: #ce1212;
+    background-color: #fc70701d;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statW i:hover{
+    background-color: #ce1212;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+.statW span{
+    font-size: large;
+    font-weight: 550;
+    width: 130%;
+    text-align: center;
+}
+.statW p {
+    width: 150%;
+    text-align: center;
+    color: #171212a8;
+}
 
 
 
