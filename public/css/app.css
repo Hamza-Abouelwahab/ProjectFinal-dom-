@@ -365,8 +365,100 @@ nav a:hover {
     font-size: x-large;
     padding-top: 1vh;
 }
+/* ? section TESTIMONIALS */
+.testimonials{
+    padding: 5vh 6vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    gap: 4vh;
+    background-color: #f2f2f2;
+}
+.testimonials p {
+    font-size: 15px;
+    color: #171212d5;
+}
+.testimonials h1{
+    font-size: 45px;
+}
+.testimonials h1 span {
+    color: #ce1212;
+}
 
 
+/* ^ carousel */
+.carousel-container {
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    gap: 2vw;
+}
+.slide .text{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.slide .text p{
+    line-height: 6vh;
+    font-weight: 500;
+}
+.slide .text h3{
+    font-weight: 400;
+}
+.slide .text h4{
+    color: #171212a8;
+    font-size: 14px;
+}
+.slide .text .star {
+    display: flex;
+    
+}
+.slide .text .star i{
+    color: #ffc107;
+}
+
+.slide img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.indicators-grp{
+    width: 100%;
+    padding: 2vh 0;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+.indicator{
+    width: 12px;
+    height: 12px;
+    background: #808080bd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.activeIndicator{
+    background-color: #ce1212;
+}
 
 
 
