@@ -295,12 +295,76 @@ nav a:hover {
 .stats p {
     color: #dadadae6;
 }
-
-
-
-
-
-
+/* ? section menu */
+.menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 4vh;
+    padding: 5vh 6vw;
+}
+.menu p{
+    color: #171212a8;
+    font-size: 14px;
+}
+.menu h1{
+    font-size: 45px;
+}
+.menu h1 span{
+    color: #ce1212;
+    
+}
+.d-flexMenu{
+    display: flex;
+    gap: 4vw;
+    padding-bottom: 2vh;
+}
+.d-flexMenu p {
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.d-flexMenu p::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #171212a8;
+    position: absolute;
+    bottom: -8px;
+}
+.d-flexMenu p:hover::before{
+    background-color: #ce1212;
+}
+.menu span{
+    color: #171212d5;
+}
+.menu h2{
+    color: #ce1212;
+    font-size: 50px;
+}
+.all-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+}
+.all-menu .card img {
+    width: 50%;
+    padding-bottom: 2vh;
+}
+.all-menu  .text{
+    font-size: large;
+    color: black;
+}
+.all-menu span{
+    font-size: 14px;
+    color: #171212a8;
+}
+.all-menu .price{
+    color: #ce1212;
+    font-size: x-large;
+    padding-top: 1vh;
+}
 
 
 
