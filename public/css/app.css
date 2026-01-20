@@ -550,7 +550,7 @@ nav a:hover {
 .activeIndicator{
     background-color: #ce1212;
 }
-/* ? section parties */
+/* ? section events */
 
 .carousel-container-event {
     overflow: hidden; 
@@ -664,8 +664,60 @@ nav a:hover {
 .chefs h1 span{
     color: #ce1212;
 }
+.contianer-chefs{
+    display: flex;
+    gap: 3vw;
+    margin-top: 10vh;
+}
 .box{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.box:hover{
+    transform: scale(1.09);
+    transition: ease-in-out 0.3s;
+}
+.item {
+    width: 100%;
+    height: 50%;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.text-chef{
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 2vh;
+    padding: 2vh 3vw;
+    margin-bottom: 8vh;
+}
+
+.text-chef .nameofchef{
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-chef span{
+    font-size: 13px;
+    color: #171212a8;
+}
+.text-chef .paragraphe{
+    color: #171212a8;
+    font-size: 12px;
+    line-height: 5vh;
+    /* list-style: center; */
 }
 @media (max-width:992px) {
     header{
