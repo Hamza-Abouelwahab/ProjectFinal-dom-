@@ -1,17 +1,51 @@
-// * hero section
-let btnVideo = document.querySelector(".btn-video")
-btnVideo.addEventListener("click" , ()=> {
-    let contianerCarousel = document.createElement("div")
-    contianerCarousel.classList.add("contianerCarousel")
-    
-    let closeBtn = document.createElement("i")
-    closeBtn.setAttribute("class","close bi bi-x-circle")
-
-    contianerCarousel.appendChild(closeBtn)
-    document.body.appendChild(contianerCarousel)
+// respinsive navbar
+let list = document.querySelector("#list")
+let navbarOfHeader = document.querySelector(".navbar-header")
+list.addEventListener("click", ()=>{
+    list.classList.toggle("bi-x")
+    navbarOfHeader.classList.toggle("active")
 })
 
-document.addEventListener("DOMContentLoaded", () => {
+
+// * hero section carousel
+const btnVideo = document.querySelector(".btn-video");
+const carouselContainer = document.getElementById("videoCarouselContainer");
+const carousel = carouselContainer.querySelector(".video-carousel");
+const slides = carousel.querySelectorAll(".video-slide");
+
+let index = 0;
+
+
+btnVideo.addEventListener("click", () => {
+    carouselContainer.style.display = "block";
+    updateCarousel();
+});
+
+// next btn
+carouselContainer.querySelector(".video-next").addEventListener("click", () => {
+    index++;
+    if (index >= slides.length) index = 0;
+    updateCarousel();
+});
+
+// prev btn
+carouselContainer.querySelector(".video-prev").addEventListener("click", () => {
+    index--;
+    if (index < 0) index = slides.length - 1;
+    updateCarousel();
+});
+//  close btn
+carouselContainer.querySelector(".video-close").addEventListener("click", () => {
+    carouselContainer.style.display = "none";
+    index = 0;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// * testimonilas caroussel 
 
     const containers = document.querySelectorAll(".carousel-container");
 
@@ -52,5 +86,3 @@ document.addEventListener("DOMContentLoaded", () => {
             goToSlide(index);
         }, 3000);
     });
-
-});
