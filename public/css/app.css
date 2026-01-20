@@ -115,9 +115,6 @@ nav a:hover {
     top: 0px;
     z-index: 10;
     background: #000000db;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .video-carousel {
@@ -184,7 +181,14 @@ nav a:hover {
 .image > img{
     width: 80%;
     transform: translateX(25%);
+    animation: move 4s ease-in-out infinite ;
 }
+@keyframes move {
+    0% { transform: translateY(0%);}
+    50% { transform: translateY(5%);}
+    100% { transform: translateY(0%);}
+}
+
 /* ? section about */
 .about{
     display: grid;
@@ -565,6 +569,23 @@ nav a:hover {
     .bi-x{
         font-size: 55px;
     }
+        /* end navbar */
+    .hero-section{
+        flex-direction: column-reverse;
+        gap: 4vh;
+    }
+    .image img{
+        width: 100%;
+        transform: translateX(0);
+    }
+    .hero-section .title h1{
+        width: 80%;
+        padding-bottom: 2vh;
+    }
+    .hero-section .title p {
+        width: 80%;
+        line-height: normal;
+    }
 }
 
 
@@ -609,6 +630,19 @@ nav a:hover {
     }
     .bi-x{
         font-size: 55px;
+    }
+    /* end navbar */
+    .hero-section{
+        flex-direction: column-reverse;
+        gap: 4vh;
+    }
+    .image img{
+        width: 100%;
+        transform: translateX(0);
+    }
+    .hero-section .title p {
+        width: 100%;
+        line-height: normal;
     }
 }
 
