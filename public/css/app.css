@@ -105,9 +105,8 @@ nav a:hover {
 .btn-video > p:hover{
     color: #d53535;
 }
-/* ~~ carousel */
+/* ^ carousel */
 .video-carousel-container {
-    /* width: 100%; */
     max-width: 100%;
     height: 100%;
     overflow: hidden;
@@ -133,15 +132,15 @@ nav a:hover {
 }
 
 .video-slide img {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     object-fit: cover;
     border-radius: 10px;
     object-position: center;
 }
 .video-slide iframe{
     width: 80%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .video-prev,
@@ -149,13 +148,21 @@ nav a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: hsl(0, 0%, 90%);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+}
+.video-prev:hover,
+.video-next:hover{
+    background-color: hsla(0, 0%, 0%, 1);
+    color: hsl(0, 0%, 100%);
+}
+.video-next i , .video-prev i {
+    font-size: 20px;
 }
 
 .video-prev { left: 10px; }
@@ -261,6 +268,13 @@ nav a:hover {
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    cursor: pointer;
+    animation: hamza ease-in-out 1.5s infinite;
+    
+}
+@keyframes hamza {
+    0%{box-shadow: 0 0 0 0 rgba(206, 18, 18, 0.6);}
+    100%{box-shadow: 0 0 0 20px rgba(206, 18, 18, 0);}
 }
 /* ? secound section about */
 .secound-sc-about{
@@ -468,12 +482,25 @@ nav a:hover {
     min-width: 100%;
     display: flex;
     gap: 2vw;
+    position: relative;
+    
 }
 .slide .text{
     text-align: start;
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    padding-left: 1vw;
+    
+}
+.slide > .text::before{
+    content: '';
+    width: 3px;
+    height: 60%;
+    top: 8px;
+    position: absolute;
+    left: 1px;
+    background-color: #ce1212;
 }
 .slide .text p{
     line-height: 6vh;
@@ -523,7 +550,123 @@ nav a:hover {
 .activeIndicator{
     background-color: #ce1212;
 }
+/* ? section parties */
 
+.carousel-container-event {
+    overflow: hidden; 
+    padding: 12vh 0;
+    position: relative;
+}
+
+.carouselEv {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.sld {
+    flex: 0 0 33.33%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+.textP h3{
+    font-size: 30px;
+}
+.textP span{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 1vh;
+    width: fit-content;
+}
+.textP span::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ce1212;
+    bottom: 0;
+}
+.textP p{
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 4vh;
+    color: #f2f2f2;
+}
+
+.carouselEv .slide-1 {
+
+    background: url("../images/events-1.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6); 
+    background-blend-mode: overlay;
+
+}
+.carouselEv .slide-2{
+    background: url("../images/events-2.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6); 
+    background-blend-mode: overlay;
+}
+.carouselEv .slide-3{
+    background: url("../images/events-3.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6); 
+    background-blend-mode: overlay;
+}
+.carouselEv .slide-4{
+    background: url("../images/events-4.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6); 
+    background-blend-mode: overlay;
+}
+.carouselEv .textP{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 4vh 4vw;
+}
+.carousel-container-event .carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+.carousel-indicators .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #808080bd;
+    cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+    background: #ce1212;
+}
+/* ? section chefs */
+.chefs{
+    padding: 5vh 6vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2vh;
+
+}
+.chefs  p{
+    font-size: 15px;
+    color: #171212d5;
+}
+.chefs h1 span{
+    color: #ce1212;
+}
+.box{
+    display: flex;
+}
 @media (max-width:992px) {
     header{
         padding: 3vh 6vh;

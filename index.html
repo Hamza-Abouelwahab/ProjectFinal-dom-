@@ -32,7 +32,7 @@
                 <p>We are team of talented designers making websites with Bootstrap</p>
                 <div class="btns">
                     <button class="btn-booka">Booka a Table</button>
-                    <button class="btn-video">
+                    <button class="btn-video" data-target="#carousel-hero">
                         <i class="bi bi-play-circle"></i>
                         <p>Watch Video</p>
                     </button>
@@ -44,11 +44,12 @@
         </div>
 
         <!-- ~ carousel display none -->
-<div id="videoCarouselContainer" class="video-carousel-container" style="display:none;">
+<div class="carousel-wrapper" id="carousel-hero">
+<div class="video-carousel-container" style="display:none;">
     <button class="video-close"><i class="bi bi-x-lg"></i></button>
     <div class="video-carousel">
         <div class="video-slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7f98aduVJ8?si=jfbR2t3amIvZXSkv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/Y7f98aduVJ8?si=aBdbizftpcQRbF8z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="video-slide">
             <img src="./public/images/menu/menu-item-1.png" alt="Slide 1">
@@ -62,11 +63,12 @@
         <div class="video-slide">
             <img src="./public/images/menu/menu-item-4.png" alt="Slide 3">
         </div>
-    </div>
 
+    </div>
     <!-- Buttons -->
-    <button class="video-prev">Prev</button>
-    <button class="video-next">Next</button>
+    <button  class="video-prev"><i class="bi bi-chevron-left"></i></button>
+    <button  class="video-next"><i class="bi bi-chevron-right"></i></button>
+</div>
 </div>
 
     
@@ -101,6 +103,29 @@
                         <img src="./public/images/about-2.jpg" alt="">
                         <i class="bi bi-play-fill"></i>
                     </div>
+    <!-- ~ carousel section about -->
+    <!-- <div id="videoCarouselContainer-2" class="video-carousel-container" style="display:none;">
+        <button class="video-close"><i class="bi bi-x-lg"></i></button>
+        <div class="video-carousel">
+        <div class="video-slide">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7f98aduVJ8?si=jfbR2t3amIvZXSkv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-slide">
+            <img src="./public/images/menu/menu-item-1.png" alt="Slide 1">
+        </div>
+        <div class="video-slide">
+            <img src="./public/images/menu/menu-item-2.png" alt="Slide 2">
+        </div>
+        <div class="video-slide">
+            <img src="./public/images/menu/menu-item-3.png" alt="Slide 3">
+        </div>
+        <div class="video-slide">
+            <img src="./public/images/menu/menu-item-4.png" alt="Slide 3">
+        </div>
+    </div>
+    <button id="videoCarouselContainer-2" class="video-prev">Prev</button>
+    <button id="videoCarouselContainer-2" class="video-next">Next</button>
+    </div>  -->
                 </div>
             </div>
         </div>
@@ -267,8 +292,54 @@
 
 
 
-    </div>
+            </div>
         </div>
+        <!-- * section parties -->
+        
+        <div id="carousel-event" class="carousel-container-event">
+            <div class="carouselEv">
+
+                <div class="sld slide-1">
+                    <div class="textP">
+                        <h3>Wedding Parties</h3>
+                        <span>$211</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem deserunt aliquid explicabo repel Natus exercitationem voluptatem voluptatibus.</p>
+                    </div>
+                </div>
+
+                <div class="sld slide-2">
+                    <div class="textP">
+                        <h3>Private Parties</h3>
+                        <span>$232</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem deserunt aliquid explicabo repel Natus exercitationem voluptatem voluptatibus.</p>
+                    </div>
+                </div>
+
+                <div class="sld slide-3">
+                    <div class="textP">
+                        <h3>Birthday Parties</h3>
+                        <span>$822</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem deserunt aliquid explicabo repel Natus exercitationem voluptatem voluptatibus.</p>
+                    </div>
+                </div>
+
+                <div class="sld slide-4">
+                    <div class="textP">
+                        <h3>Custom Parties</h3>
+                        <span>$321</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem deserunt aliquid explicabo repel Natus exercitationem voluptatem voluptatibus.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    
     </main>
 
 
