@@ -1,4 +1,4 @@
-*{
+;*{
     padding: 0;
     margin: 0;
 }
@@ -32,15 +32,15 @@ header h2 {
 header h2 span{
     color: #d53535;
 }
-nav{
+header nav{
     display: flex;
     gap: 3vw;
 }
-nav > a{
+header nav > a{
     color: gray;
     text-decoration: none;
 }
-nav a:hover {
+header nav a:hover {
     border-bottom:#d53535 2px solid;
 }
 .btn-booka{
@@ -309,6 +309,11 @@ nav a:hover {
     color: white;
     cursor: pointer;
 }
+.first-div .btn button:hover{
+    background-color: #ffffff;
+    color: #ce1212;
+    transition: ease-in-out 0.3s;
+}
 .secound-sc-about .statW{
     width: 20%;
     display: flex;
@@ -329,7 +334,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
 }
-.statW i:hover{
+.statW:hover i{
     background-color: #ce1212;
     color: white;
     transition: ease-in-out 0.3s;
@@ -717,7 +722,84 @@ nav a:hover {
     color: #171212a8;
     font-size: 12px;
     line-height: 5vh;
-    /* list-style: center; */
+}
+/* ? footer */
+footer{
+    background-color: #1f1f24;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+}
+.hero-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vh 0vw 5vh 0;
+}
+.hero-footer .card .d-flex {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.hero-footer .card .d-flex i{
+    color: #ce1212;
+    font-size: 20px;
+}
+.hero-footer .card  p{
+    margin: 0;
+}
+.hero-footer .card .change {
+    padding-left: 2.6vw;
+    padding-top: 2vh;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1vh; */
+}
+.social nav {
+    display: flex;
+    gap: 1vw;
+}
+.social nav a{
+    text-decoration: none;
+    border: #80808062 solid 1px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+
+}
+.social nav a:hover{
+    border-bottom: none;
+    color: #ce1212;
+    border: #ce1212 solid 1px;
+}
+
+
+
+
+
+
+
+.footer{
+    margin: 0 5vw;
+    padding: 5vh 6vw;
+    text-align: center;
+    border-top: #80808062 0.5px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.footer p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 0;
+}
+.footer .cRed{
+    color: #ce1212;
 }
 @media (max-width:992px) {
     header{
