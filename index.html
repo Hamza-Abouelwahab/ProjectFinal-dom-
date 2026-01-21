@@ -21,7 +21,7 @@
             <a href="#">Contact</a>
         </nav>
         <div class="right-side-header">
-            <button class="btn-booka">Booka a Table</button>
+            <a href="#btn-reservation" class="btn-booka">Booka a Table</a>
             <i id="list" class="bi bi-list"></i>
         </div>
     </header>
@@ -31,7 +31,7 @@
                 <h1>Enjoy Your Healthy Delicious Food</h1>
                 <p>We are team of talented designers making websites with Bootstrap</p>
                 <div class="btns">
-                    <button class="btn-booka">Booka a Table</button>
+                    <a href="#btn-reservation" class="btn-booka">Booka a Table</a>
                     <button class="btn-video" data-target="#carousel-hero">
                         <i class="bi bi-play-circle"></i>
                         <p>Watch Video</p>
@@ -180,10 +180,10 @@
             <p>OUR MENU</p>
             <h1>CHECK OUR <span>YUMMY MENU</span></h1>
             <div class="d-flexMenu">
-                <p>Starters</p>
-                <p>Breakfast</p>
-                <p>Lunch</p>
-                <p>Dinner</p>
+                <button>Starters</button>
+                <button>Breakfast</button>
+                <button>Lunch</button>
+                <button>Dinner</button>
             </div>
             <span>MENU</span>
             <h2>Starters</h2>
@@ -377,6 +377,30 @@
                         </div>
                     </div>
                 
+            </div>
+        </div>
+        <!-- * section booka a table -->
+        <div id="btn-reservation" class="reservation">
+            <p>BOOKA A TABLE</p>
+            <h1>Book Your <span>Stay With Us</span> </h1>
+            <div class="conainer-table">
+                <div class="img">
+                    <img src="./public/images/reservation.jpg" alt="">
+                </div>
+                <div class="info">
+                    <form action="">
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your email">
+                        <input type="tel" placeholder="Your phone">
+                        <input type="date" placeholder="Your email">
+                        <input type="time" placeholder="Your email">
+                        <input type="text" placeholder="# of people">
+                    </form>
+                    <div class="textarea">
+                        <textarea name="" id="" cols="70" rows="6" placeholder="Message"></textarea>
+                    </div>
+                    <button>Booka a table</button>
+                </div>
             </div>
         </div>
     </main>

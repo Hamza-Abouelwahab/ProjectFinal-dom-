@@ -1,4 +1,4 @@
-;*{
+*{
     padding: 0;
     margin: 0;
 }
@@ -50,6 +50,7 @@ header nav a:hover {
     background-color: #d53535;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn-booka:hover{
     background-color: hsl(0, 66%, 55%);
@@ -84,6 +85,8 @@ header nav a:hover {
     padding-top: 6vh;
     display: flex;
     gap: 2vw;
+    
+    width: 100%;
 }
 .btn-video{
     display: flex;
@@ -97,6 +100,7 @@ header nav a:hover {
     font-size: 15px;
     font-weight: 550;
     color: black;
+    margin: 0;
 }
 .btn-video > i{
     font-size: 30px;
@@ -402,12 +406,14 @@ header nav a:hover {
     gap: 4vw;
     padding-bottom: 2vh;
 }
-.d-flexMenu p {
+.d-flexMenu button {
     font-size: 20px;
     position: relative;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
-.d-flexMenu p::before{
+.d-flexMenu button::before{
     content: '';
     width: 100%;
     height: 3px;
@@ -415,7 +421,7 @@ header nav a:hover {
     position: absolute;
     bottom: -8px;
 }
-.d-flexMenu p:hover::before{
+.d-flexMenu button:hover::before{
     background-color: #ce1212;
 }
 .menu span{
@@ -556,7 +562,7 @@ header nav a:hover {
     background-color: #ce1212;
 }
 /* ? section events */
-
+/* ^ carousel event */
 .carousel-container-event {
     overflow: hidden; 
     padding: 12vh 0;
@@ -673,6 +679,7 @@ header nav a:hover {
     display: flex;
     gap: 3vw;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 .box{
     display: flex;
@@ -723,6 +730,72 @@ header nav a:hover {
     font-size: 12px;
     line-height: 5vh;
 }
+/* ? section booka a table */
+    .reservation{
+        padding: 5vh 6vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap : 2vh ;
+    }
+    .reservation p{
+    font-size: 15px;
+    color: #171212d5;
+    }
+    .reservation h1 span{
+        color: #ce1212;
+    }
+    .conainer-table{
+        width: 100%;
+        height: 100vh;
+        background-color: #f2f2f2;
+        display: flex;
+        /* gap: 2vw; */
+    }
+    .img{
+        width: 40%;
+        height: 100%;
+        
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .info{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6vh;
+        padding-inline: 3vw;
+    }
+    .info form{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2vw;
+    }
+    .info form input{
+        padding: 2vh 0.5vw;
+        border: solid 1px #80808061;
+        outline: none;
+        
+    }
+    .textarea{
+        width: 100%;
+    }
+    .textarea textarea{
+        padding: 2vh 1vw;
+    }
+    .info button{
+        padding: 3vh 5vw;
+        background-color: #ce1212;
+        color: white;
+        border: none;
+        border-radius: 5px;
+
+    }
 /* ? footer */
 footer{
     background-color: #1f1f24;
@@ -777,13 +850,6 @@ footer{
     color: #ce1212;
     border: #ce1212 solid 1px;
 }
-
-
-
-
-
-
-
 .footer{
     margin: 0 5vw;
     padding: 5vh 6vw;
