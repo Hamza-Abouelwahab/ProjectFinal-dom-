@@ -88,19 +88,19 @@ document.querySelectorAll(".bi-play-fill").forEach(btn => {
     })
 })
 // * menu logic 
-    let btns = document.querySelectorAll(".d-flexMenu button")
-    let dishes = document.querySelectorAll(".all-menu .card")
+    let btns = document.querySelectorAll(".d-flexMenu button") ;
+    let dishes = document.querySelectorAll(".all-menu .card") ;
 
         btns.forEach(btn => {
             btn.addEventListener("click" , ()=>{
-                let category = btn.getAttribute("data-category")
+                let category = btn.getAttribute("data-category") ;
                     dishes.forEach(card => {
                         let categories = card.dataset.category.split(" ");
                         if (categories === "all" || categories.includes(category)) {
-                            card.style.display = ""
+                            card.style.display = "" ;
                             
                         }else{
-                            card.style.display ="none"
+                            card.style.display ="none" ;
                         }
                     })
             })
@@ -189,8 +189,18 @@ setInterval(() => {
     }
 }, 3000)
 
-
-
+// * modal Reservation 
+let modalConainer = document.querySelector(".contianer-modal-reservation");
+let btnRev = document.querySelectorAll(".btn-booka");
+btnRev.forEach(btn => {
+    btn.addEventListener("click", () => {
+        modalConainer.style.display = "" ;
+        const closeBtn = document.querySelector("#close-res")
+        closeBtn.addEventListener("click" , () =>{
+            modalConainer.style.display = "none"
+        })
+    })
+})
 
 
 

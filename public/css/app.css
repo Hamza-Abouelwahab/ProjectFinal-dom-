@@ -407,22 +407,28 @@ header nav a:hover {
     padding-bottom: 2vh;
 }
 .d-flexMenu button {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 200;
     position: relative;
     cursor: pointer;
     border: none;
+    color: #000000a8;
     background-color: transparent;
 }
 .d-flexMenu button::before{
     content: '';
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: #171212a8;
     position: absolute;
     bottom: -8px;
 }
 .d-flexMenu button:hover::before{
     background-color: #ce1212;
+}
+.d-flexMenu button:hover{
+    color: black;
+
 }
 .menu span{
     color: #171212d5;
@@ -786,6 +792,9 @@ header nav a:hover {
     }
     .textarea textarea{
         padding: 2vh 1vw;
+        outline: none;
+        border: solid 1px #80808061;
+
     }
     .info button{
         padding: 3vh 5vw;
@@ -866,6 +875,79 @@ footer{
 .footer .cRed{
     color: #ce1212;
 }
+
+
+/*  ! modale reserve a table */
+    .contianer-modal-reservation{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 5vh 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 12;
+    }
+    .modal-reservation{
+        padding: 6vh 2vw;
+        width: 30%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        border-radius: 5px;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.15);
+    }
+    .modal-reservation h2{
+        font-family: 'Courier New', Courier, monospace;
+        padding-bottom: 4vh;
+        
+    }
+    .modal-reservation .bi-x{
+        font-size: 25px;
+        font-weight: 100;
+        right: 10px;
+        top: 6px;
+        position: absolute;
+        border: hsla(0, 0%, 0% ) 1px solid;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        color: hsl(0, 0%, 0%);
+    }
+    .modal-reservation .bi-x:hover{
+        color: hsl(0, 0%, 50%);
+        border: hsl(0, 0%, 50%) 1px solid;
+    }
+    .modal-reservation form{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .modal-reservation form input{
+        padding: 2vh 2vw;
+        border: #0000004d solid 1px;
+        outline: none;
+    }
+    .input-flex{
+        display: flex;
+        gap: 1vw;
+    }
+    .btn-reserve{
+        padding: 2vh 2vw;
+    }
+    .btn-reserve button{
+        padding: 2vh 2vw ;
+        background-color: #ce1212;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
 @media (max-width:992px) {
     header{
         padding: 3vh 6vh;

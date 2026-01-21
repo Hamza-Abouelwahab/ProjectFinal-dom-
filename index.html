@@ -164,7 +164,7 @@
                 <button data-category="dinner" >Dinner</button>
             </div>
             <span>MENU</span>
-            <h2>Starters</h2>
+            <h2>Foods</h2>
             <div class="all-menu">
                 <div data-category="lunch all" class="card">
                     <img src="./public/images/menu/menu-item-1.png" alt="">
@@ -271,7 +271,7 @@
 
 
             </div>
-        </div>
+        </div> 
         <!-- * section events -->
         
         <div id="carousel-event" class="carousel-container-event">
@@ -358,7 +358,7 @@
             </div>
         </div>
         <!-- * section booka a table -->
-        <div id="btn-reservation" class="reservation">
+        <div  class="reservation">
             <p>BOOKA A TABLE</p>
             <h1>Book Your <span>Stay With Us</span> </h1>
             <div class="conainer-table">
@@ -377,7 +377,7 @@
                     <div class="textarea">
                         <textarea name="" id="" cols="70" rows="6" placeholder="Message"></textarea>
                     </div>
-                    <button>Booka a table</button>
+                    <button class="btn-booka">Booka a table</button>
                 </div>
             </div>
         </div>
@@ -426,8 +426,30 @@
         </div>
     </footer>
 
+    <!-- * modal reservation -->
 
+    <div id="btn-reservation" class="contianer-modal-reservation" style="display: none;">
+        <div class="modal-reservation">
+            <i id="close-res" class="bi bi-x"></i>
+            <h2>Reserve your Place</h2>
+                <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Num of Table">
+                <div class="input-flex">
+                    <input type="date" >
+                    <input type="time">
+                </div>
+                <input type="text" placeholder="Number of Person">
+            </form>
+            <div class="btn-reserve">
+                <button>Reserve a Table</button>
+            </div>
+        </div>
+        </div>
 
+    
 
 
 
