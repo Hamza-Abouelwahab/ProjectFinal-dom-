@@ -804,6 +804,76 @@ header nav a:hover {
         border-radius: 5px;
 
     }
+    /* ? contact */
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 6vh;
+        padding: 5vh 6vw;
+    }
+    .contact p{
+        font-size: 15px;
+        color: #171212d5;
+    }
+    .contact h1 span{
+        color: #ce1212;
+    }
+    .maps{
+        width: 100%;    
+        height: 350px;   
+    }
+    .maps iframe{
+        height: 100%; 
+        width: 100%;    
+    }
+    .info-contact{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 4vw;
+        width: 100%;
+    }
+    .card-contact{
+        display: flex;
+        gap: 1.5vw;
+        align-items: center;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.15);
+        padding: 6vh 2vw;
+        border-radius: 5px;
+        font-size: 30px;
+        
+    }
+    .card-contact i{
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ce1212;
+    }
+    /* .message-cotact{
+        width: 100%;
+        background-color: red;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 2vh;
+    }
+    .message-cotact form input{
+        width: 100%; 
+        padding: 2vh 0vw;
+    }
+    .message-cotact .info-flex{
+        display: flex;
+        justify-content: space-between;
+        gap: 2vw;
+        width: 100%; 
+        padding-bottom: 2vw;
+    } */
+
+    
 /* ? footer */
 footer{
     background-color: #1f1f24;
@@ -947,6 +1017,10 @@ footer{
         color: white;
         border: none;
         border-radius: 5px;
+        cursor: pointer;
+    }
+    .btn-reserve button:hover {
+        background-color: #d53535;
     }
 @media (max-width:992px) {
     header{
