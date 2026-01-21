@@ -87,6 +87,25 @@ document.querySelectorAll(".bi-play-fill").forEach(btn => {
         carouselContainer.style.display = "block"
     })
 })
+// * menu logic 
+    let btns = document.querySelectorAll(".d-flexMenu button")
+    let dishes = document.querySelectorAll(".all-menu .card")
+
+        btns.forEach(btn => {
+            btn.addEventListener("click" , ()=>{
+                let category = btn.getAttribute("data-category")
+                    dishes.forEach(card => {
+                        let categories = card.dataset.category.split(" ");
+                        if (categories === "all" || categories.includes(category)) {
+                            card.style.display = ""
+                            
+                        }else{
+                            card.style.display ="none"
+                        }
+                    })
+            })
+            
+        })
 
 // * testimonilas caroussel 
 
