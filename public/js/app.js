@@ -68,7 +68,18 @@ document.querySelectorAll(".carousel-wrapper").forEach(wrapper => {
     carousels[wrapper.id] = container;
 })
 
+// ? carousel section hero section
 document.querySelectorAll(".btn-video").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const target = btn.dataset.target; 
+        const wrapper = document.querySelector(target);
+        const carouselContainer = wrapper.querySelector(".video-carousel-container");
+        carouselContainer.style.display = "block"
+    })
+})
+
+// ? carousel sectoin about
+document.querySelectorAll(".bi-play-fill").forEach(btn => {
     btn.addEventListener("click", () => {
         const target = btn.dataset.target; 
         const wrapper = document.querySelector(target);
