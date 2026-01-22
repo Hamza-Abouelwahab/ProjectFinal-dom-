@@ -853,26 +853,63 @@ header nav a:hover {
         align-items: center;
         background-color: #ce1212;
     }
-    /* .message-cotact{
+    .message-cotact{
         width: 100%;
-        background-color: red;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.15);
+        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+        align-items: center;
         gap: 2vh;
+        padding: 6vh 0vw;
+    }
+    .message-cotact form {
+        width: 90%;
+    }
+    .message-cotact .textarea{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    textarea{
+        outline: none;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 2vw;
     }
     .message-cotact form input{
         width: 100%; 
-        padding: 2vh 0vw;
+        padding: 2vh 1vw;
+        outline: none;
+        border: 0.5px solid #00000059;
+        border-radius: 5px;
     }
     .message-cotact .info-flex{
         display: flex;
         justify-content: space-between;
         gap: 2vw;
-        width: 100%; 
-        padding-bottom: 2vw;
-    } */
-
+        margin-bottom: 2vw;
+    }
+    .message-cotact .subject-input{
+        width: 100%;
+        margin-bottom: 2vw;
+    }
+    .message-cotact .subject-input input{
+        width: 97%;
+    }
+    .message-cotact .btn button{
+    padding: 1.9vh 1.7vw;
+    border: none;
+    border-radius: 20px;
+    background-color: #d53535;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.message-cotact .btn button:hover{
+    background-color: hsl(0, 66%, 55%);
+}
     
 /* ? footer */
 footer{

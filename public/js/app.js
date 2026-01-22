@@ -10,7 +10,6 @@ list.addEventListener("click", ()=>{
 // * hero section carousel
 function initCarousel(container) {
     
-    
     const carouselContainer = container.querySelector(".video-carousel-container");
     const carousel = container.querySelector(".video-carousel");
     const slides = container.querySelectorAll(".video-slide");
@@ -96,7 +95,7 @@ document.querySelectorAll(".bi-play-fill").forEach(btn => {
                 let category = btn.getAttribute("data-category") ;
                     dishes.forEach(card => {
                         let categories = card.dataset.category.split(" ");
-                        if (categories === "all" || categories.includes(category)) {
+                        if (category === "all" || categories.includes(category)) {
                             card.style.display = "" ;
                             
                         }else{
@@ -168,7 +167,6 @@ function updateCarousel() {
     const slideWidth = slides[0].offsetWidth;
     carousel.style.transform = `translateX(-${index * slideWidth}px)`;
     
-
     dots.forEach(dot => dot.classList.remove('active'));
     dots[index % totalSlides].classList.add('active');
 }
@@ -202,66 +200,3 @@ btnRev.forEach(btn => {
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function caroussel() {
-// const btnVideo = document.querySelectorAll(".btn-video");
-// const carouselContainer = document.querySelectorAll(".video-carousel-container");
-// const carousel = carouselContainer.querySelectorAll(".video-carousel");
-// const slides = carousel.querySelectorAll(".video-slide");
-
-// let index = 0;
-
-// btnVideo.forEach(btn =>{
-//     btn.addEventListener("click", () => {
-//         carouselContainer.forEach(cont => {
-//             cont.style.display = "block";
-//             updateCarousel();
-//         })
-//     });
-    
-// })
-
-// // next btn
-// carouselContainer.querySelector(".video-next").addEventListener("click", () => {
-//     index++;
-//     if (index >= slides.length) index = 0;
-//     updateCarousel();
-// });
-
-// // prev btn
-// carouselContainer.querySelector(".video-prev").addEventListener("click", () => {
-//     index--;
-//     if (index < 0) index = slides.length - 1;
-//     updateCarousel();
-// });
-// //  close btn
-// carouselContainer.querySelector(".video-close").addEventListener("click", () => {
-//     carouselContainer.style.display = "none";
-//     index = 0;
-//     updateCarousel();
-// });
-
-// function updateCarousel() {
-//     carousel.style.transform = `translateX(-${index * 100}%)`;
-// }
-// }
