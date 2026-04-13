@@ -1,10 +1,33 @@
-// respinsive navbar
-let list = document.querySelector("#list")
-let navbarOfHeader = document.querySelector(".navbar-header")
-list.addEventListener("click", ()=>{
-    list.classList.toggle("bi-x")
-    navbarOfHeader.classList.toggle("active")
-})
+// responsive navbar
+const list = document.querySelector("#list");
+const navbarOfHeader = document.querySelector(".navbar-header");
+const overlay = document.createElement("div");
+overlay.className = "nav-overlay";
+document.body.appendChild(overlay);
+
+function openNav() {
+    navbarOfHeader.classList.add("active");
+    overlay.classList.add("active");
+    list.classList.add("open");
+    document.body.style.overflow = "hidden";
+}
+
+function closeNav() {
+    navbarOfHeader.classList.remove("active");
+    overlay.classList.remove("active");
+    list.classList.remove("open");
+    document.body.style.overflow = "";
+}
+
+list.addEventListener("click", () => {
+    navbarOfHeader.classList.contains("active") ? closeNav() : openNav();
+});
+
+overlay.addEventListener("click", closeNav);
+
+navbarOfHeader.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", closeNav);
+});
 
 
 // * hero section carousel
